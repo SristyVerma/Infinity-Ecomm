@@ -97,10 +97,10 @@ console.log(paymentInfo,shippingInfo);
     const { amount, id: order_id, currency } = result.data.order
     console.log(amount);
     const options = {
-      key: "rzp_test_DqW3a0vWEb0gYn", // Enter the Key ID generated from the Dashboard
+      key: "", // Enter the Key ID generated from the Dashboard
       amount: amount,
       currency: currency,
-      name: "Developer' Corner",
+      name: "Infinity",
       description: "Test Transaction",
       
       order_id: order_id,
@@ -126,12 +126,12 @@ console.log(paymentInfo,shippingInfo);
         },300)
       },
       prefill: {
-          name: "Dev Corner",
-          email: "devcorner@example.com",
+          name: "Infinity",
+          email: "sristy@example.com",
           contact: "9999999999",
       },
       notes: {
-          address: "Developer's Corner Office",
+          address: "Infinity Office",
       },
       theme: {
           color: "#61dafb",
@@ -148,7 +148,7 @@ console.log(paymentInfo,shippingInfo);
         <div className="row">
           <div className="col-7">
             <div className="checkout-left-data">
-              <h3 className="website-name">Dev Corner</h3>
+              <h3 className="website-name">Infinity</h3>
               <nav
                 style={{ "--bs-breadcrumb-divider": ">" }}
                 aria-label="breadcrumb"
@@ -181,7 +181,7 @@ console.log(paymentInfo,shippingInfo);
               </nav>
               <h4 className="title total">Contact Information</h4>
               <p className="user-details total">
-                Navdeep Dahiya (monud0232@gmail.com)
+                Sristy Verma(dreamlicious.srs@gmail.com)
               </p>
               <h4 className="mb-3">Shipping Address</h4>
               <form onSubmit={formik.handleSubmit}
@@ -286,8 +286,8 @@ console.log(paymentInfo,shippingInfo);
                     <option value="" selected disabled>
                       Select State
                     </option>
-                    <option value="Haryana" >
-                      Haryana
+                    <option value="Deoria" >
+                      Deoria
                     </option>
                   </select>
                   <div className="error ms-2 my-1">

@@ -238,7 +238,7 @@ const Addproduct = () => {
               )}
             </Dropzone>
           </div>
-          <div className="showimages d-flex flex-wrap gap-3">
+          <div className="showimages d-flex flex-wrap gap-3" >
             {imgState?.map((i, j) => {
               return (
                 <div className=" position-relative" key={j}>
@@ -248,6 +248,7 @@ const Addproduct = () => {
                     className="btn-close position-absolute"
                     style={{ top: "10px", right: "10px" }}
                   ></button>
+                  {console.log(i.url)}
                   <img src={i.url} alt="" width={200} height={200} />
                 </div>
               );

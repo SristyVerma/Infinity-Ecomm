@@ -7,8 +7,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllBlogs } from "../features/blogs/blogSlice";
 import moment from "moment";
 const Blog = () => {
-  const blogState = useSelector((state) => state?.blog?.blog);
-
+  const blogState = useSelector((state) => state?.blog);
+console.log(blogState)
   const dispatch = useDispatch();
   useEffect(() => {
     getblogs();
